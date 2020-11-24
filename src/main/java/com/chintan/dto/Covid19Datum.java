@@ -39,61 +39,61 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 public class Covid19Datum {
 
     @JsonProperty("updated")
-    private Integer updated;
+    private Long updated;
     @JsonProperty("country")
     private String country;
     @JsonProperty("countryInfo")
     private CountryInfo countryInfo;
     @JsonProperty("cases")
-    private Integer cases;
+    private Long cases;
     @JsonProperty("todayCases")
-    private Integer todayCases;
+    private Long todayCases;
     @JsonProperty("deaths")
-    private Integer deaths;
+    private Long deaths;
     @JsonProperty("todayDeaths")
-    private Integer todayDeaths;
+    private Long todayDeaths;
     @JsonProperty("recovered")
-    private Integer recovered;
+    private Long recovered;
     @JsonProperty("todayRecovered")
-    private Integer todayRecovered;
+    private Long todayRecovered;
     @JsonProperty("active")
-    private Integer active;
+    private Long active;
     @JsonProperty("critical")
-    private Integer critical;
+    private Long critical;
     @JsonProperty("casesPerOneMillion")
-    private Integer casesPerOneMillion;
+    private Long casesPerOneMillion;
     @JsonProperty("deathsPerOneMillion")
-    private Integer deathsPerOneMillion;
+    private Long deathsPerOneMillion;
     @JsonProperty("tests")
-    private Integer tests;
+    private Long tests;
     @JsonProperty("testsPerOneMillion")
-    private Integer testsPerOneMillion;
+    private Long testsPerOneMillion;
     @JsonProperty("population")
-    private Integer population;
+    private Long population;
     @JsonProperty("continent")
     private String continent;
     @JsonProperty("oneCasePerPeople")
-    private Integer oneCasePerPeople;
+    private Long oneCasePerPeople;
     @JsonProperty("oneDeathPerPeople")
-    private Integer oneDeathPerPeople;
+    private Long oneDeathPerPeople;
     @JsonProperty("oneTestPerPeople")
-    private Integer oneTestPerPeople;
+    private Long oneTestPerPeople;
     @JsonProperty("activePerOneMillion")
     private Double activePerOneMillion;
     @JsonProperty("recoveredPerOneMillion")
     private Double recoveredPerOneMillion;
     @JsonProperty("criticalPerOneMillion")
-    private Integer criticalPerOneMillion;
+    private Long criticalPerOneMillion;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("updated")
-    public Integer getUpdated() {
+    public Long getUpdated() {
         return updated;
     }
 
     @JsonProperty("updated")
-    public void setUpdated(Integer updated) {
+    public void setUpdated(Long updated) {
         this.updated = updated;
     }
 
@@ -118,132 +118,132 @@ public class Covid19Datum {
     }
 
     @JsonProperty("cases")
-    public Integer getCases() {
+    public Long getCases() {
         return cases;
     }
 
     @JsonProperty("cases")
-    public void setCases(Integer cases) {
+    public void setCases(Long cases) {
         this.cases = cases;
     }
 
     @JsonProperty("todayCases")
-    public Integer getTodayCases() {
+    public Long getTodayCases() {
         return todayCases;
     }
 
     @JsonProperty("todayCases")
-    public void setTodayCases(Integer todayCases) {
+    public void setTodayCases(Long todayCases) {
         this.todayCases = todayCases;
     }
 
     @JsonProperty("deaths")
-    public Integer getDeaths() {
+    public Long getDeaths() {
         return deaths;
     }
 
     @JsonProperty("deaths")
-    public void setDeaths(Integer deaths) {
+    public void setDeaths(Long deaths) {
         this.deaths = deaths;
     }
 
     @JsonProperty("todayDeaths")
-    public Integer getTodayDeaths() {
+    public Long getTodayDeaths() {
         return todayDeaths;
     }
 
     @JsonProperty("todayDeaths")
-    public void setTodayDeaths(Integer todayDeaths) {
+    public void setTodayDeaths(Long todayDeaths) {
         this.todayDeaths = todayDeaths;
     }
 
     @JsonProperty("recovered")
-    public Integer getRecovered() {
+    public Long getRecovered() {
         return recovered;
     }
 
     @JsonProperty("recovered")
-    public void setRecovered(Integer recovered) {
+    public void setRecovered(Long recovered) {
         this.recovered = recovered;
     }
 
     @JsonProperty("todayRecovered")
-    public Integer getTodayRecovered() {
+    public Long getTodayRecovered() {
         return todayRecovered;
     }
 
     @JsonProperty("todayRecovered")
-    public void setTodayRecovered(Integer todayRecovered) {
+    public void setTodayRecovered(Long todayRecovered) {
         this.todayRecovered = todayRecovered;
     }
 
     @JsonProperty("active")
-    public Integer getActive() {
+    public Long getActive() {
         return active;
     }
 
     @JsonProperty("active")
-    public void setActive(Integer active) {
+    public void setActive(Long active) {
         this.active = active;
     }
 
     @JsonProperty("critical")
-    public Integer getCritical() {
+    public Long getCritical() {
         return critical;
     }
 
     @JsonProperty("critical")
-    public void setCritical(Integer critical) {
+    public void setCritical(Long critical) {
         this.critical = critical;
     }
 
     @JsonProperty("casesPerOneMillion")
-    public Integer getCasesPerOneMillion() {
+    public Long getCasesPerOneMillion() {
         return casesPerOneMillion;
     }
 
     @JsonProperty("casesPerOneMillion")
-    public void setCasesPerOneMillion(Integer casesPerOneMillion) {
+    public void setCasesPerOneMillion(Long casesPerOneMillion) {
         this.casesPerOneMillion = casesPerOneMillion;
     }
 
     @JsonProperty("deathsPerOneMillion")
-    public Integer getDeathsPerOneMillion() {
+    public Long getDeathsPerOneMillion() {
         return deathsPerOneMillion;
     }
 
     @JsonProperty("deathsPerOneMillion")
-    public void setDeathsPerOneMillion(Integer deathsPerOneMillion) {
+    public void setDeathsPerOneMillion(Long deathsPerOneMillion) {
         this.deathsPerOneMillion = deathsPerOneMillion;
     }
 
     @JsonProperty("tests")
-    public Integer getTests() {
+    public Long getTests() {
         return tests;
     }
 
     @JsonProperty("tests")
-    public void setTests(Integer tests) {
+    public void setTests(Long tests) {
         this.tests = tests;
     }
 
     @JsonProperty("testsPerOneMillion")
-    public Integer getTestsPerOneMillion() {
+    public Long getTestsPerOneMillion() {
         return testsPerOneMillion;
     }
 
     @JsonProperty("testsPerOneMillion")
-    public void setTestsPerOneMillion(Integer testsPerOneMillion) {
+    public void setTestsPerOneMillion(Long testsPerOneMillion) {
         this.testsPerOneMillion = testsPerOneMillion;
     }
 
     @JsonProperty("population")
-    public Integer getPopulation() {
+    public Long getPopulation() {
         return population;
     }
 
     @JsonProperty("population")
-    public void setPopulation(Integer population) {
+    public void setPopulation(Long population) {
         this.population = population;
     }
 
@@ -258,32 +258,32 @@ public class Covid19Datum {
     }
 
     @JsonProperty("oneCasePerPeople")
-    public Integer getOneCasePerPeople() {
+    public Long getOneCasePerPeople() {
         return oneCasePerPeople;
     }
 
     @JsonProperty("oneCasePerPeople")
-    public void setOneCasePerPeople(Integer oneCasePerPeople) {
+    public void setOneCasePerPeople(Long oneCasePerPeople) {
         this.oneCasePerPeople = oneCasePerPeople;
     }
 
     @JsonProperty("oneDeathPerPeople")
-    public Integer getOneDeathPerPeople() {
+    public Long getOneDeathPerPeople() {
         return oneDeathPerPeople;
     }
 
     @JsonProperty("oneDeathPerPeople")
-    public void setOneDeathPerPeople(Integer oneDeathPerPeople) {
+    public void setOneDeathPerPeople(Long oneDeathPerPeople) {
         this.oneDeathPerPeople = oneDeathPerPeople;
     }
 
     @JsonProperty("oneTestPerPeople")
-    public Integer getOneTestPerPeople() {
+    public Long getOneTestPerPeople() {
         return oneTestPerPeople;
     }
 
     @JsonProperty("oneTestPerPeople")
-    public void setOneTestPerPeople(Integer oneTestPerPeople) {
+    public void setOneTestPerPeople(Long oneTestPerPeople) {
         this.oneTestPerPeople = oneTestPerPeople;
     }
 
@@ -308,12 +308,12 @@ public class Covid19Datum {
     }
 
     @JsonProperty("criticalPerOneMillion")
-    public Integer getCriticalPerOneMillion() {
+    public Long getCriticalPerOneMillion() {
         return criticalPerOneMillion;
     }
 
     @JsonProperty("criticalPerOneMillion")
-    public void setCriticalPerOneMillion(Integer criticalPerOneMillion) {
+    public void setCriticalPerOneMillion(Long criticalPerOneMillion) {
         this.criticalPerOneMillion = criticalPerOneMillion;
     }
 

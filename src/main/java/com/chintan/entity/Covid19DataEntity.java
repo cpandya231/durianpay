@@ -12,10 +12,10 @@ public class Covid19DataEntity {
     private String name;
 
     @DynamoDBAttribute
-    private Integer active;
+    private Long active;
 
     @DynamoDBAttribute
-    private Integer deaths;
+    private Long deaths;
 
 
     public String getCode() {
@@ -34,19 +34,19 @@ public class Covid19DataEntity {
         this.name = name;
     }
 
-    public Integer getActive() {
+    public Long getActive() {
         return active;
     }
 
-    public void setActive(Integer active) {
+    public void setActive(Long active) {
         this.active = active;
     }
 
-    public Integer getDeaths() {
+    public Long getDeaths() {
         return deaths;
     }
 
-    public void setDeaths(Integer deaths) {
+    public void setDeaths(Long deaths) {
         this.deaths = deaths;
     }
 }
