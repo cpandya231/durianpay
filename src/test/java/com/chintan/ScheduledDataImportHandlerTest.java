@@ -9,17 +9,17 @@ import java.util.Map;
 
 
 public class ScheduledDataImportHandlerTest {
-    private com.chintan.handler.GetCountryWiseRequestHandler handler;
+    private com.chintan.handler.ScheduledDataImportHandler handler;
 
     @Test
     public void handleTest() {
-        this.handler = new com.chintan.handler.GetCountryWiseRequestHandler();
+        this.handler = new com.chintan.handler.ScheduledDataImportHandler();
 
         APIGatewayProxyRequestEvent request = new APIGatewayProxyRequestEvent();
         Map<String, String> queryParam = new HashMap<>();
         queryParam.put("searchQuery", "CASES IN");
         request.setQueryStringParameters(queryParam);
-        Object output = this.handler.handleRequest(request, null);
+        Object output = this.handler.handleRequest(new HashMap<>(), null);
 
 
     }
