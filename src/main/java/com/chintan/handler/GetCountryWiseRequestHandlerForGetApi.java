@@ -22,12 +22,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 
-public class GetCountryWiseRequestHandler implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
+public class GetCountryWiseRequestHandlerForGetApi implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
 
     AmazonDynamoDB client;
     DynamoDBMapper dynamoDBMapper;
 
-    public GetCountryWiseRequestHandler() {
+    public GetCountryWiseRequestHandlerForGetApi() {
         client = AmazonDynamoDBClientBuilder.standard().build();
         dynamoDBMapper = new DynamoDBMapper(client);
     }
@@ -41,14 +41,7 @@ public class GetCountryWiseRequestHandler implements RequestHandler<APIGatewayPr
 
     private String getCountryWiseInfo(APIGatewayProxyRequestEvent apiGatewayProxyRequestEvent) {
 
-        String requestString = apiGatewayProxyRequestEvent.getBody();
-        System.out.println("Got request string " + requestString + " from Twilio");
-
-        String searchQuery = Arrays.stream(requestString.split("&"))
-                .filter(param -> {
-                    String[] str = param.split("=");
-                    return str[0].equalsIgnoreCase("Body");
-                }).collect(Collectors.joining()).split("=")[1];
+        String searchQuery = apiGatewayProxyRequestEvent.getQueryStringParameters().get("searchQuery");
         try {
             searchQuery = URLDecoder.decode(searchQuery, StandardCharsets.UTF_8.toString());
         } catch (UnsupportedEncodingException e) {
